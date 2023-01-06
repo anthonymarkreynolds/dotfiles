@@ -15,6 +15,11 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   -- My plugins here
   use 'nvim-treesitter/nvim-treesitter'
+  use {
+  'nvim-telescope/telescope.nvim', tag = '0.1.0',
+-- or                            , branch = '0.1.x',
+  requires = { {'nvim-lua/plenary.nvim'} }
+}
   -- use 'foo1/bar1.nvim'
   -- use 'foo2/bar2.nvim'
 
