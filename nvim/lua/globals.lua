@@ -27,7 +27,7 @@ set.relativenumber = true
 set.list = true           -- enable listchars
 set.listchars = "tab:>->,trail:●,eol:↴,space:⋅"
 
-set.laststatus = 3
 set.mouse = "a"           -- enable mouse support
 
 set.termguicolors = true  -- enable 24-bit RBG color
+set.laststatus = 3        -- enable global statusline
