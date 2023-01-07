@@ -1,7 +1,7 @@
 require('lualine').setup {
   options = {
     icons_enabled = true,
-    theme = 'auto',
+    theme = 'onedark',
     component_separators = { left = '|', right = '|'},
     section_separators = { left = '', right = ''},
 --    component_separators = { left = '', right = ''},
@@ -45,18 +45,18 @@ require('lualine').setup {
 vim.cmd([[
 "lualine transparent middle (b,c)
 
-hi lualine_c_inactive guibg=none guifg=grey
-hi lualine_c_visual guibg=none guifg=grey
-hi lualine_c_replace guibg=none guifg=grey
-hi lualine_c_normal guibg=none guifg=grey
-hi lualine_c_insert guibg=none guifg=grey
-hi lualine_c_command guibg=none guifg=grey
-
-hi lualine_b_inactive guibg=none "guifg=grey
-hi lualine_b_visual guibg=none "guifg=grey
-hi lualine_b_replace guibg=none "guifg=grey
-hi lualine_b_normal guibg=none "guifg=grey
-hi lualine_b_insert guibg=none "guifg=grey
-hi lualine_b_command guibg=none "guifg=grey
+"hi lualine_c_inactive guibg=none guifg=grey
+"hi lualine_c_visual guibg=none guifg=grey
+"hi lualine_c_replace guibg=none guifg=grey
+"hi lualine_c_normal guibg=none guifg=grey
+"hi lualine_c_insert guibg=none guifg=grey
+"hi lualine_c_command guibg=none guifg=grey
+"
+"hi lualine_b_inactive guibg=none "guifg=grey
+"hi lualine_b_visual guibg=none "guifg=grey
+"hi lualine_b_replace guibg=none "guifg=grey
+"hi lualine_b_normal guibg=none "guifg=grey
+"hi lualine_b_insert guibg=none "guifg=grey
+"hi lualine_b_command guibg=none "guifg=grey
 
 ]])
