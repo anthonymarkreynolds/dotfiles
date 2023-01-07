@@ -1,0 +1,21 @@
+{
+    "$schema": "https://raw.githubusercontent.com/sumneko/vscode-lua/master/setting/schema.json",
+    "Lua.workspace.library": [
+        "/nix/store/pr960hhq1wfayh5j36ylf6h4drbi2hnq-vim-pack-dir",
+        "/home/anthony/.config/nvim",
+        "/home/anthony/.local/share/nvim/site",
+        "/home/anthony/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+        "/home/anthony/.local/share/nvim/site/pack/packer/start/mason.nvim",
+        "/home/anthony/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+        "/home/anthony/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+        "/home/anthony/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+        "/home/anthony/.local/share/nvim/site/pack/packer/start/onedark.nvim",
+        "/home/anthony/.local/share/nvim/site/pack/packer/start/packer.nvim",
+        "/home/anthony/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+        "/home/anthony/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+        "/nix/store/5vfn10ss8cacbhrf70pl50r4f24j98nd-neovim-unwrapped-0.8.2/share/nvim/runtime",
+        "/nix/store/5vfn10ss8cacbhrf70pl50r4f24j98nd-neovim-unwrapped-0.8.2/share/nvim/runtime/pack/dist/opt/matchit",
+        "/nix/store/5vfn10ss8cacbhrf70pl50r4f24j98nd-neovim-unwrapped-0.8.2/lib/nvim",
+        "${3rd}/luassert/library"
+    ]
+}
