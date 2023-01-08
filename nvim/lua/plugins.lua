@@ -13,26 +13,37 @@ local packer_bootstrap = ensure_packer()
 
 return require("packer").startup(function(use)
 	use("wbthomason/packer.nvim")
+
+	-- syntax
 	use("nvim-treesitter/nvim-treesitter")
 	use("nvim-treesitter/nvim-treesitter-context")
-	use({
-		"nvim-telescope/telescope.nvim",
-		requires = { { "nvim-lua/plenary.nvim" } },
-	})
-	use({
-		"nvim-lualine/lualine.nvim",
-		requires = { "kyazdani42/nvim-web-devicons", opt = true },
-	})
+	use("lukas-reineke/indent-blankline.nvim")
+
+	-- lsp
 	use({ "williamboman/mason.nvim" })
 	use("neovim/nvim-lspconfig")
-	use("navarasu/onedark.nvim")
 	use({
 		"jose-elias-alvarez/null-ls.nvim",
 		requires = { "nvim-lua/plenary.nvim" },
 	})
 
-	use("lukas-reineke/indent-blankline.nvim")
+	-- navigation
+	use({
+		"nvim-telescope/telescope.nvim",
+		requires = { { "nvim-lua/plenary.nvim" } },
+	})
+
+	-- git
 	use("lewis6991/gitsigns.nvim")
+
+	-- theme
+	use("navarasu/onedark.nvim")
+
+	-- status line
+	use({
+		"nvim-lualine/lualine.nvim",
+		requires = { "kyazdani42/nvim-web-devicons", opt = true },
+	})
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
