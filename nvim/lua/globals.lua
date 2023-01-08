@@ -9,6 +9,7 @@ set.shiftwidth = 2 -- 2 spaces per (auto)indent
 
 --
 set.cursorline = true -- highlight current row
+set.signcolumn = "auto:3"
 
 -- search
 set.hlsearch = false -- disable previous search highlighting
