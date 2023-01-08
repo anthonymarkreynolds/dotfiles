@@ -9,7 +9,7 @@ set.shiftwidth = 2 -- 2 spaces per (auto)indent
 
 --
 set.cursorline = true -- highlight current row
-set.signcolumn = "auto:3"
+set.signcolumn = "auto"
 
 -- search
 set.hlsearch = false -- disable previous search highlighting
@@ -27,8 +27,9 @@ set.number = true
 set.relativenumber = true
 
 -- list chars
-set.list = true -- enable listchars
-set.listchars = "tab:-->,trail:●,eol:↴,space:⋅"
+set.list = true -- enable      listchars
+-- tab(right arrow), trail
+set.listchars = "tab:-->,trail:●,eol:↴,lead:․,space:⸱,multispace:⸱◦,extends:⮒"
 
 set.mouse = "a" -- enable mouse support
 

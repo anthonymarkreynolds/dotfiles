@@ -15,8 +15,9 @@ return require("packer").startup(function(use)
 	use("wbthomason/packer.nvim")
 
 	-- syntax
-	use("nvim-treesitter/nvim-treesitter")
+	use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
 	use("nvim-treesitter/nvim-treesitter-context")
+	use("nvim-treesitter/playground")
 	use("lukas-reineke/indent-blankline.nvim")
 
 	-- lsp

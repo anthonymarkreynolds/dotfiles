@@ -3,6 +3,9 @@ local opts = { noremap = true, silent = true }
 -- set leader to space
 vim.g.mapleader = " "
 
+-- netrw
+vim.keymap.set("n", "<leader>l", vim.cmd.Ex)
+
 -- use ctr to navigate windows
 vim.keymap.set("n", "<C-h>", "<C-w>h", opts)
 vim.keymap.set("n", "<C-j>", "<C-w>j", opts)
