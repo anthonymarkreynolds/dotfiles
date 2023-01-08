@@ -60,6 +60,9 @@ vim.cmd([[
 hi FloatBorder guibg=none guifg=#2c323c
 hi NormalFloat guibg=none
 
+" Treesitter
+hi TreesitterContextBottom gui=underline guibg=#282c34 guifg=none
+
 hi WinSeparator guifg=#2c323c
 hi NvimTreeWinSeparator guifg=#2c323c
 hi TelescopeBorder guifg=#828997
