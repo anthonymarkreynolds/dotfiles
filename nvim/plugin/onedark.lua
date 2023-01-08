@@ -40,6 +40,7 @@ require("onedark").setup({
 })
 require("onedark").load()
 
+-- enable borders
 local _border = "single"
 
 vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
