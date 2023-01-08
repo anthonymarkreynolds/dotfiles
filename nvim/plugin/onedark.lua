@@ -31,7 +31,7 @@ require("onedark").setup({
 	colors = {}, -- Override default colors
 	highlights = {}, -- Override highlight groups
 
-	-- Plugins Config --
+	-- Plugins Config
 	diagnostics = {
 		darker = true, -- darker colors for diagnostic
 		undercurl = true, -- use undercurl instead of underline for diagnostics
@@ -40,14 +40,41 @@ require("onedark").setup({
 })
 require("onedark").load()
 
--- color overides
+local _border = "single"
+
+vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
+	border = _border,
+})
+
+vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, {
+	border = _border,
+})
+
+vim.diagnostic.config({
+	float = { border = _border },
+})
+
+-- additional color overides
 vim.cmd([[
+" borders
+hi FloatBorder guibg=none guifg=#2c323c
+hi NormalFloat guibg=none
+
 hi WinSeparator guifg=#2c323c
 hi NvimTreeWinSeparator guifg=#2c323c
 hi TelescopeBorder guifg=#828997
 hi TelescopePreviewBorder guifg=#2c323c
 hi TelescopePromptBorder guifg=#2c323c
 hi TelescopeResultsBorder guifg=#2c323c
+
+" Indent Blankline
+hi IndentBlanklineChar guifg=#2c323c
+
+" Menus
+hi Pmenu guibg=none
+"hi hl_LspReferenceText guibg=none
+"hi hl_LspReferenceRead guibg=none
+"hi hl_LspReferenceWrite guibg=none
 
 "lualine transparent middle (b,c)
 hi lualine_c_inactive guibg=none guifg=grey
