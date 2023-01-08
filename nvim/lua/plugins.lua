@@ -26,7 +26,6 @@ return require("packer").startup(function(use)
 	use({ "williamboman/mason.nvim" })
 	use("neovim/nvim-lspconfig")
 	use("navarasu/onedark.nvim")
-	use("nvim-tree/nvim-tree.lua")
 	use({
 		"jose-elias-alvarez/null-ls.nvim",
 		requires = { "nvim-lua/plenary.nvim" },
