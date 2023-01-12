@@ -13,6 +13,7 @@ set.signcolumn = "auto"
 
 -- search
 set.hlsearch = false -- disable previous search highlighting
+set.incsearch = true
 set.ignorecase = true -- ignore case in search patterns
 set.smartcase = true -- override 'ignorecase' if contains uppercase
 
@@ -28,7 +29,6 @@ set.relativenumber = true
 
 -- list chars
 set.list = true -- enable      listchars
--- tab(right arrow), trail
 set.listchars = "tab:-->,trail:●,eol:↴,lead:․,space:⸱,multispace:⸱◦,extends:⮒"
 
 set.mouse = "a" -- enable mouse support

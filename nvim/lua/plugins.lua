@@ -12,15 +12,17 @@ end
 local packer_bootstrap = ensure_packer()
 
 return require("packer").startup(function(use)
+	-- Package Management
 	use("wbthomason/packer.nvim")
 
-	-- syntax
+	-- Syntax
 	use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
 	use("nvim-treesitter/nvim-treesitter-context")
 	use("nvim-treesitter/playground")
 	use("lukas-reineke/indent-blankline.nvim")
+	use({ "kevinhwang91/nvim-ufo", requires = "kevinhwang91/promise-async" })
 
-	-- lsp
+	-- LSP
 	use({ "williamboman/mason.nvim" })
 	use("neovim/nvim-lspconfig")
 	use({
@@ -28,7 +30,7 @@ return require("packer").startup(function(use)
 		requires = { "nvim-lua/plenary.nvim" },
 	})
 
-	-- navigation
+	-- Navigation
 	use({
 		"nvim-telescope/telescope.nvim",
 		requires = { { "nvim-lua/plenary.nvim" } },
@@ -37,13 +39,22 @@ return require("packer").startup(function(use)
 	-- git
 	use("lewis6991/gitsigns.nvim")
 
-	-- theme
+	-- Theme
 	use("navarasu/onedark.nvim")
 
-	-- status line
+	-- Status Line
 	use({
 		"nvim-lualine/lualine.nvim",
 		requires = { "kyazdani42/nvim-web-devicons", opt = true },
+	})
+
+	-- Organisation / Project Management
+	use({
+		"nvim-neorg/neorg",
+		requires = {
+			{ "nvim-lua/plenary.nvim" },
+			{ "nvim-neorg/neorg-telescope" },
+		},
 	})
 
 	-- Automatically set up your configuration after cloning packer.nvim

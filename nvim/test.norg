@@ -1,0 +1,21 @@
+@document.meta
+title: test
+description: testing neorg
+authors: anthony
+categories: test
+created: 2023-01-12
+updated: 2023-01-12
+version: 1.0.0
+@end
+
+
+* Tasks
+  - (x) task 1
+  - ( ) task 2
+  -- ( ) task 2.1
+  -- ( ) task 2.2
+** test
+   @code javascript
+console.log("test")
+const tau = Math.PI * 2
+   @end

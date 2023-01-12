@@ -81,13 +81,13 @@ hi Pmenu guibg=none
 "hi hl_LspReferenceWrite guibg=none
 
 "lualine transparent middle (b,c)
-hi lualine_c_inactive guibg=none guifg=grey
-hi lualine_c_visual guibg=none   guifg=grey
-hi lualine_c_replace guibg=none  guifg=grey
-hi lualine_c_normal guibg=none   guifg=grey
-hi lualine_c_insert guibg=none   guifg=grey
-hi lualine_c_command guibg=none  guifg=grey
-hi lualine_c_terminal guibg=none  guifg=grey
+hi lualine_c_inactive guibg=none guifg=#848b98
+hi lualine_c_visual guibg=none guifg=#848b98
+hi lualine_c_replace guibg=none guifg=#848b98
+hi lualine_c_normal guibg=none guifg=#848b98
+hi lualine_c_insert guibg=none guifg=#848b98
+hi lualine_c_command guibg=none guifg=#848b98
+hi lualine_c_terminal guibg=none guifg=#848b98
 
 hi lualine_b_inactive guibg=none "guifg=grey
 hi lualine_b_visual guibg=none "guifg=grey
