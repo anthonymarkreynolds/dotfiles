@@ -30,6 +30,9 @@ return require("packer").startup(function(use)
 		requires = { "nvim-lua/plenary.nvim" },
 	})
 
+	-- Completion
+	use({ "L3MON4D3/LuaSnip", tag = "v<CurrentMajor>.*" })
+
 	-- Navigation
 	use({
 		"nvim-telescope/telescope.nvim",
