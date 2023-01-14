@@ -1,9 +1,23 @@
 require("neorg").setup({
 	load = {
 		["core.defaults"] = {},
+		["core.norg.dirman"] = {
+			config = {
+				workspaces = {
+					my_ws = "~/neorg",
+					my_other_notes = "~/work/notes",
+				},
+				index = "index.norg",
+			},
+		},
 		["core.norg.qol.toc"] = {},
 		["core.norg.qol.todo_items"] = {},
-		["core.norg.concealer"] = {},
+		["core.norg.concealer"] = {
+			config = {
+				folds = false,
+			},
+		},
+		["core.norg.esupports.hop"] = {},
 		["core.norg.esupports.indent"] = {},
 		["core.norg.esupports.metagen"] = {
 			config = {

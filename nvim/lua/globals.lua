@@ -8,6 +8,9 @@ set.tabstop = 2 -- 2 spaces per tab
 set.shiftwidth = 2 -- 2 spaces per (auto)indent
 
 --
+-- set.autochdir = true
+
+--
 set.cursorline = true -- highlight current row
 set.signcolumn = "auto"
 

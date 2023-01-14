@@ -20,7 +20,7 @@ return require("packer").startup(function(use)
 	use("nvim-treesitter/nvim-treesitter-context")
 	use("nvim-treesitter/playground")
 	use("lukas-reineke/indent-blankline.nvim")
-	use({ "kevinhwang91/nvim-ufo", requires = "kevinhwang91/promise-async" })
+	--use({ "kevinhwang91/nvim-ufo", requires = "kevinhwang91/promise-async" })
 
 	-- LSP
 	use({ "williamboman/mason.nvim" })
@@ -31,7 +31,11 @@ return require("packer").startup(function(use)
 	})
 
 	-- Completion
+	use("hrsh7th/nvim-cmp")
+	use("hrsh7th/cmp-nvim-lsp")
 	use({ "L3MON4D3/LuaSnip", tag = "v<CurrentMajor>.*" })
+	use("saadparwaiz1/cmp_luasnip")
+	use("rafamadriz/friendly-snippets")
 
 	-- Navigation
 	use({
