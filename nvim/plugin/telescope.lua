@@ -2,6 +2,10 @@ require("telescope").setup({
 	defaults = {
 		-- Default configuration for telescope goes here:
 		-- config_key = value,
+
+		layout_config = {
+			width = 1000,
+		},
 		mappings = {
 			i = {
 				-- map actions.which_key to <C-h> (default: <C-/>)

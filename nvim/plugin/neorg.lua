@@ -1,13 +1,21 @@
 require("neorg").setup({
 	load = {
 		["core.defaults"] = {},
+		["core.syntax"] = {},
 		["core.norg.dirman"] = {
 			config = {
 				workspaces = {
 					my_ws = "~/neorg",
 					my_other_notes = "~/work/notes",
+					book_study = "~/Documents/books/notes",
 				},
 				index = "index.norg",
+			},
+		},
+		["core.integrations.nvim-cmp"] = {},
+		["core.norg.completion"] = {
+			config = {
+				engine = "nvim-cmp",
 			},
 		},
 		["core.norg.qol.toc"] = {},
@@ -15,6 +23,7 @@ require("neorg").setup({
 		["core.norg.concealer"] = {
 			config = {
 				folds = false,
+				icon_preset = "basic",
 			},
 		},
 		["core.norg.esupports.hop"] = {},
@@ -33,10 +42,8 @@ require("neorg").setup({
 				hook = function(keybinds)
 					keybinds.map("norg", "n", "<leader>tt", "<cmd>echo 'test'<CR>")
 					keybinds.map_event("norg", "n", "<leader>tr", "core.norg.qol.todo_items.todo.task_done")
-					keybinds.map_event("norg", "n", "<leader>nmu", "core.norg.esupports.metagen.update_metadata")
-					keybinds.map_event("norg", "n", "<leader>nmc", "core.norg.esupports.metagen.constuct_metadata")
-					keybinds.map_event("norg", "n", "<leader>nmp", "core.norg.esupports.metagen.is_metadata_present")
-					keybinds.map_event("norg", "n", "<leader>nmi", "core.norg.esupports.metagen.inject_metadata")
+					keybinds.map_event("norg", "n", "<leader>gt", "core.norg.dirman.new.note")
+					keybinds.map_event("norg", "n", "<leader>ntl", "core.integrations.telescope.find_linkable")
 				end,
 			},
 		},

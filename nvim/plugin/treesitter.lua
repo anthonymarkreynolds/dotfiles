@@ -6,6 +6,7 @@ require("nvim-treesitter.configs").setup({
 		"javascript",
 		"typescript",
 		"nix",
+		"haskell",
 	},
 
 	-- Install parsers synchronously (only applied to `ensure_installed`)

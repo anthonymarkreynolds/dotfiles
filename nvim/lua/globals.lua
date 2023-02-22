@@ -9,6 +9,7 @@ set.shiftwidth = 2 -- 2 spaces per (auto)indent
 
 --
 -- set.autochdir = true
+set.swapfile = false
 
 --
 set.cursorline = true -- highlight current row
