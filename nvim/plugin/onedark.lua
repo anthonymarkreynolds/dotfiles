@@ -1,7 +1,7 @@
 -- Lua
 require("onedark").setup({
 	-- Main options --
-	style = "dark", -- Default theme style. Choose between 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer' and 'light'
+	style = "darker", -- Default theme style. Choose between 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer' and 'light'
 	transparent = true, -- Show/hide background
 	term_colors = true, -- Change terminal color as per the selected theme style
 	ending_tildes = false, -- Show the end-of-buffer tildes. By default they are hidden
@@ -76,6 +76,9 @@ hi IndentBlanklineChar guifg=#2c323c
 
 " Menus
 hi Pmenu guibg=none
+hi BorderBG guifg=#2c323c
+hi BorderBG2 guifg=#2c323c
+
 "hi hl_LspReferenceText guibg=none
 "hi hl_LspReferenceRead guibg=none
 "hi hl_LspReferenceWrite guibg=none

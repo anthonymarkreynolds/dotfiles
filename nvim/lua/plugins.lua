@@ -15,6 +15,9 @@ return require("packer").startup(function(use)
 	-- Package Management
 	use("wbthomason/packer.nvim")
 
+	-- Quality of Life
+	use("numToStr/Comment.nvim")
+
 	-- Syntax
 	use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
 	use("nvim-treesitter/nvim-treesitter-context")
@@ -33,32 +36,27 @@ return require("packer").startup(function(use)
 	-- Completion
 	use("hrsh7th/nvim-cmp")
 	use("hrsh7th/cmp-nvim-lsp")
-	use({ "L3MON4D3/LuaSnip", tag = "v<CurrentMajor>.*" })
+	use("L3MON4D3/LuaSnip")
 	use("saadparwaiz1/cmp_luasnip")
 	use("rafamadriz/friendly-snippets")
 	use("onsails/lspkind.nvim")
 
 	--AI
-	use({
-		"jackMort/ChatGPT.nvim",
-		requires = {
-			"MunifTanjim/nui.nvim",
-			"nvim-lua/plenary.nvim",
-			"nvim-telescope/telescope.nvim",
-		},
-	})
 
 	-- Navigation
 	use({
 		"nvim-telescope/telescope.nvim",
 		requires = { { "nvim-lua/plenary.nvim" } },
 	})
+	use("ggandor/leap.nvim")
+	use("phaazon/hop.nvim")
 
 	-- git
 	use("lewis6991/gitsigns.nvim")
 
 	-- Theme
 	use("navarasu/onedark.nvim")
+	use("julien/vim-colors-green")
 
 	-- Status Line
 	use({

@@ -4,17 +4,16 @@ description: testing neorg
 authors: anthony
 categories: test
 created: 2023-01-12
-updated: 2023-01-16
+updated: 2023-03-04
 version: 1.0.0
 @end
 
 * Tasks
-  - ( ) task 1
-  - ( ) task 2
-  -- ( ) task 2.1
-  -- ( ) task 2.2
+	- ( ) task 1
+	- ( ) task 2
+	- ( ) task 2.1
+	- ( ) task 2.2
 ** test
-   @code javascript
-   onsole.log("test")
-   const tau = Math.PI * 2
-   @end
+   Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
+   Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
+   loremSent

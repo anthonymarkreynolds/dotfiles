@@ -4,7 +4,7 @@ local opts = { noremap = true, silent = true }
 vim.g.mapleader = " "
 
 -- netrw
-vim.keymap.set("n", "<leader>l", vim.cmd.Ex)
+-- vim.keymap.set("n", "<leader>l", vim.cmd.Ex)
 
 -- use ctr to navigate windows
 vim.keymap.set("n", "<C-h>", "<C-w>h", opts)
@@ -28,3 +28,7 @@ vim.keymap.set("n", "<space>q", vim.diagnostic.setloclist, opts)
 -- folds
 vim.keymap.set("n", "<leader>fo", vim.cmd.foldopen)
 vim.keymap.set("n", "<leader>fc", vim.cmd.foldclose)
+
+-- hop
+vim.keymap.set({ "n", "v", "i" }, "<leader>j", vim.cmd.HopWord)
+vim.keymap.set({ "n", "v", "i" }, "<leader>l", vim.cmd.HopLine)
