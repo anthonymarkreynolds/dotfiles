@@ -1,3 +1,4 @@
+require("lspconfig.ui.windows").default_options.border = "single"
 local runtime_path = vim.split(package.path, ";")
 table.insert(runtime_path, "lua/?.lua")
 table.insert(runtime_path, "lua/?/init.lua")

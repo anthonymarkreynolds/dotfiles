@@ -1,8 +1,10 @@
 local cmp = require("cmp")
 local lspkind = require("lspkind")
+local borderchars = { "┌", "─", "┐", "│", "┘", "─", "└", "│" }
 
 cmp.setup({
 	formatting = {
+		expandable_indicator = true,
 		format = lspkind.cmp_format({
 			mode = "symbol", -- show only symbol annotations
 			maxwidth = 50, -- prevent the popup from showing more than provided characters (e.g 50 will not show more than 50 characters)
@@ -26,9 +28,11 @@ cmp.setup({
 
 	window = {
 		completion = cmp.config.window.bordered({
+			border = borderchars,
 			winhighlight = "Normal:Normal,FloatBorder:BorderBG,CursorLine:PmenuSel,Search:None",
 		}),
 		documentation = cmp.config.window.bordered({
+			border = borderchars,
 			winhighlight = "FloatBorder:BorderBG2",
 		}),
 	},
@@ -62,7 +66,9 @@ cmp.setup.cmdline("/", {
 -- `:` cmdline setup.
 cmp.setup.cmdline(":", {
 	mapping = cmp.mapping.preset.cmdline(),
-	sources = cmp.config.sources({}, {
+	sources = cmp.config.sources({
+		{ name = "path" },
+	}, {
 		{ name = "cmdline" },
 	}),
 })

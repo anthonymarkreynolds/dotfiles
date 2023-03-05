@@ -2,7 +2,7 @@ require("telescope").setup({
 	defaults = {
 		-- Default configuration for telescope goes here:
 		-- config_key = value,
-
+		borderchars = { "─", "│", "─", "│", "┌", "┐", "┘", "└" },
 		layout_config = {
 			width = 1000,
 			height = 1000,

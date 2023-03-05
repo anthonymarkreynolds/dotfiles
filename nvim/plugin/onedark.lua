@@ -57,9 +57,12 @@ vim.diagnostic.config({
 
 -- additional color overides
 vim.cmd([[
+hi CursorLine guibg=#181a1f
+
 " borders
 hi FloatBorder guibg=none guifg=#2c323c
-hi NormalFloat guibg=none
+hi NormalFloat guibg=none 
+hi LspInfoBorder guibg=none guifg=#2c323c
 
 " Treesitter
 hi TreesitterContextBottom gui=underline guibg=#282c34 guifg=none
@@ -82,6 +85,9 @@ hi BorderBG2 guifg=#2c323c
 "hi hl_LspReferenceText guibg=none
 "hi hl_LspReferenceRead guibg=none
 "hi hl_LspReferenceWrite guibg=none
+
+"lsp
+" hi DiagnosticHint guibg=#181a1f
 
 "lualine transparent middle (b,c)
 hi lualine_c_inactive guibg=none guifg=#848b98

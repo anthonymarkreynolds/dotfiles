@@ -1,3 +1,4 @@
+local hop = require("hop")
 local opts = { noremap = true, silent = true }
 
 -- set leader to space
@@ -5,6 +6,9 @@ vim.g.mapleader = " "
 
 -- netrw
 -- vim.keymap.set("n", "<leader>l", vim.cmd.Ex)
+
+vim.keymap.set("n", "<leader>M", ":m -2 <CR>", opts)
+vim.keymap.set("n", "<leader>m", ":m +1 <CR>", opts)
 
 -- use ctr to navigate windows
 vim.keymap.set("n", "<C-h>", "<C-w>h", opts)
@@ -30,5 +34,5 @@ vim.keymap.set("n", "<leader>fo", vim.cmd.foldopen)
 vim.keymap.set("n", "<leader>fc", vim.cmd.foldclose)
 
 -- hop
-vim.keymap.set({ "n", "v", "i" }, "<leader>j", vim.cmd.HopWord)
-vim.keymap.set({ "n", "v", "i" }, "<leader>l", vim.cmd.HopLine)
+vim.keymap.set({ "n", "v", "i" }, "<leader>j", hop.hint_words)
+vim.keymap.set({ "n", "v", "i" }, "<leader>l", hop.hint_lines)
