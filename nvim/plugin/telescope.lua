@@ -1,8 +1,7 @@
 require("telescope").setup({
 	defaults = {
-		-- Default configuration for telescope goes here:
-		-- config_key = value,
 		borderchars = { "─", "│", "─", "│", "┌", "┐", "┘", "└" },
+		layout_strategy = "vertical",
 		layout_config = {
 			width = 1000,
 			height = 1000,
@@ -16,7 +15,6 @@ require("telescope").setup({
 			},
 		},
 	},
-
 	pickers = {
 		-- Default configuration for builtin pickers goes here:
 		-- picker_name = {

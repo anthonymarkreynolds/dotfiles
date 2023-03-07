@@ -15,10 +15,9 @@ return require("packer").startup(function(use)
 	-- Package Management
 	use("wbthomason/packer.nvim")
 
-	-- Quality of Life
-	use("numToStr/Comment.nvim")
-
 	-- Syntax
+	use("kylechui/nvim-surround")
+	use("numToStr/Comment.nvim")
 	use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
 	use("nvim-treesitter/nvim-treesitter-context")
 	use("nvim-treesitter/playground")
@@ -26,7 +25,6 @@ return require("packer").startup(function(use)
 	--use({ "kevinhwang91/nvim-ufo", requires = "kevinhwang91/promise-async" })
 
 	-- LSP
-	use({ "williamboman/mason.nvim" })
 	use("neovim/nvim-lspconfig")
 	use({
 		"jose-elias-alvarez/null-ls.nvim",
@@ -46,14 +44,11 @@ return require("packer").startup(function(use)
 	use("rafamadriz/friendly-snippets")
 	use("onsails/lspkind.nvim")
 
-	--AI
-
 	-- Navigation
 	use({
 		"nvim-telescope/telescope.nvim",
 		requires = { { "nvim-lua/plenary.nvim" } },
 	})
-	use("ggandor/leap.nvim")
 	use("phaazon/hop.nvim")
 
 	-- git

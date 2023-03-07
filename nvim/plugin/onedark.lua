@@ -75,7 +75,8 @@ hi TelescopePromptBorder guifg=#2c323c
 hi TelescopeResultsBorder guifg=#2c323c
 
 " Indent Blankline
-hi IndentBlanklineChar guifg=#2c323c
+hi IndentBlanklineContextChar guifg=#828997
+hi IndentBlanklineContextStart gui=underline
 
 " Menus
 hi Pmenu guibg=none

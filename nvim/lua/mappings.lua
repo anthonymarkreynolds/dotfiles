@@ -34,5 +34,5 @@ vim.keymap.set("n", "<leader>fo", vim.cmd.foldopen)
 vim.keymap.set("n", "<leader>fc", vim.cmd.foldclose)
 
 -- hop
-vim.keymap.set({ "n", "v", "i" }, "<leader>j", hop.hint_words)
-vim.keymap.set({ "n", "v", "i" }, "<leader>l", hop.hint_lines)
+vim.keymap.set({ "n", "v" }, "<leader>j", hop.hint_words)
+vim.keymap.set({ "n", "v" }, "<leader>l", hop.hint_lines)
