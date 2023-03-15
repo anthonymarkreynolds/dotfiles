@@ -8,6 +8,7 @@ require("neorg").setup({
 					my_ws = "~/neorg",
 					my_other_notes = "~/work/notes",
 					book_study = "~/Documents/books/notes",
+					research = "~/Documents/research",
 				},
 				index = "index.norg",
 			},

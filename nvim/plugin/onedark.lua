@@ -1,7 +1,7 @@
 -- Lua
 require("onedark").setup({
 	-- Main options --
-	style = "darker", -- Default theme style. Choose between 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer' and 'light'
+	style = "deep", -- Default theme style. Choose between 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer' and 'light'
 	transparent = true, -- Show/hide background
 	term_colors = true, -- Change terminal color as per the selected theme style
 	ending_tildes = false, -- Show the end-of-buffer tildes. By default they are hidden
@@ -57,7 +57,7 @@ vim.diagnostic.config({
 
 -- additional color overides
 vim.cmd([[
-hi CursorLine guibg=#181a1f
+hi CursorLine guibg=#23152E
 
 " borders
 hi FloatBorder guibg=none guifg=#2c323c
@@ -88,6 +88,10 @@ hi BorderBG2 guifg=#2c323c
 "hi hl_LspReferenceWrite guibg=none
 
 "lsp
+hi DiagnosticVirtualTextHint guibg=none
+hi DiagnosticVirtualTextWarn guibg=none
+hi DiagnosticVirtualTextError guibg=none
+hi DiagnosticVirtualTextInfo guibg=none
 " hi DiagnosticHint guibg=#181a1f
 
 "lualine transparent middle (b,c)

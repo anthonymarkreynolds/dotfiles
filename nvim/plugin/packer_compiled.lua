@@ -149,10 +149,10 @@ _G.packer_plugins = {
     path = "/home/anthony/.local/share/nvim/site/pack/packer/start/neorg-telescope",
     url = "https://github.com/nvim-neorg/neorg-telescope"
   },
-  ["null-ls.nvim"] = {
+  ["nvim-autopairs"] = {
     loaded = true,
-    path = "/home/anthony/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
-    url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
+    path = "/home/anthony/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
+    url = "https://github.com/windwp/nvim-autopairs"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -204,6 +204,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/anthony/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["telescope-hoogle.nvim"] = {
+    loaded = true,
+    path = "/home/anthony/.local/share/nvim/site/pack/packer/start/telescope-hoogle.nvim",
+    url = "https://github.com/psiska/telescope-hoogle.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,

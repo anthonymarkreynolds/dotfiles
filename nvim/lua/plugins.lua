@@ -17,6 +17,7 @@ return require("packer").startup(function(use)
 
 	-- Syntax
 	use("kylechui/nvim-surround")
+	use("windwp/nvim-autopairs")
 	use("numToStr/Comment.nvim")
 	use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
 	use("nvim-treesitter/nvim-treesitter-context")
@@ -26,10 +27,6 @@ return require("packer").startup(function(use)
 
 	-- LSP
 	use("neovim/nvim-lspconfig")
-	use({
-		"jose-elias-alvarez/null-ls.nvim",
-		requires = { "nvim-lua/plenary.nvim" },
-	})
 
 	-- Completion
 	use("hrsh7th/nvim-cmp")
@@ -47,7 +44,10 @@ return require("packer").startup(function(use)
 	-- Navigation
 	use({
 		"nvim-telescope/telescope.nvim",
-		requires = { { "nvim-lua/plenary.nvim" } },
+		requires = {
+			"nvim-lua/plenary.nvim",
+			"psiska/telescope-hoogle.nvim",
+		},
 	})
 	use("phaazon/hop.nvim")
 
