@@ -7,6 +7,7 @@ require("nvim-treesitter.configs").setup({
 		"typescript",
 		"nix",
 		"haskell",
+		"yaml"
 	},
 
 	-- Install parsers synchronously (only applied to `ensure_installed`)
@@ -49,3 +50,5 @@ require("nvim-treesitter.configs").setup({
 })
 
 require("treesitter-context").setup()
+
+-- require('nvim-treesitter.install').compilers = { 'clang' }

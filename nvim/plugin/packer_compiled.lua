@@ -149,6 +149,11 @@ _G.packer_plugins = {
     path = "/home/anthony/.local/share/nvim/site/pack/packer/start/neorg-telescope",
     url = "https://github.com/nvim-neorg/neorg-telescope"
   },
+  ["null-ls.nvim"] = {
+    loaded = true,
+    path = "/home/anthony/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
+    url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
+  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/home/anthony/.local/share/nvim/site/pack/packer/start/nvim-autopairs",

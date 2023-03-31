@@ -8,5 +8,7 @@ require("indent_blankline").setup({
 		"norg",
 		"haskell",
 		"help",
+		"yaml",
+		"cabal"
 	},
 })

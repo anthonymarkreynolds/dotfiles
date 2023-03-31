@@ -38,16 +38,23 @@ local on_attach = function(client, bufnr)
 	-- AutoCommand for format on save
 	if client.server_capabilities.documentFormattingProvider then
 		vim.cmd([[
-            augroup LspFormatting
-            autocmd! * <buffer>
-            autocmd BufWritePre <buffer> lua vim.lsp.buf.format()
-            augroup END
-        ]])
+	           augroup LspFormatting
+	           autocmd! * <buffer>
+	           autocmd BufWritePre <buffer> lua vim.lsp.buf.format()
+	           augroup END
+	       ]])
 	end
 end
 
 require 'lspconfig'.hls.setup({
-	on_attach = on_attach
+	on_attach = on_attach,
+	capabilities = capabilities,
+	settings = {
+		haskell = {
+			formattingProvider = "stylish-haskell"
+
+		}
+	}
 })
 
 require("lspconfig").lua_ls.setup({
@@ -77,10 +84,11 @@ require("lspconfig").lua_ls.setup({
 		},
 	},
 })
--- local null_ls = require("null-ls")
--- null_ls.setup({
--- 	sources = {
--- 		null_ls.builtins.formatting.stylua,
--- 	},
--- 	on_attach = on_attach,
--- })
+local null_ls = require("null-ls")
+null_ls.setup({
+	sources = {
+		null_ls.builtins.formatting.stylua,
+		-- null_ls.builtins.formatting.stylish_haskell
+	},
+	on_attach = on_attach,
+})
